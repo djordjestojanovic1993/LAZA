@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laza aplikacija</title>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./styles/main.css">
+        <link rel="stylesheet" type="text/css" href="./styles/responsive-midd.css">
+        <link rel="stylesheet" type="text/css" href="./styles/responsive-small.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="pictures/hubeg-logo.jpg">
+            </div>
+            <nav id="nav">
+                <div id="burger" class="center-y-axis margin-58">
+                    <span id="line1" class="line"></span>
+                    <span id="line2" class="line"></span>
+                    <span id="line3" class="line"></span>
+                </div>
+                <ul id="nav-list" class="height-0-850px">
+                    <li><a href="#" class="center-y-axis">Početna</a></li>
+                    <li><a href="#" class="center-y-axis">O aplikaciji</a></li>
+                    <li><a href="#" class="center-y-axis">Paketi</a></li>
+                    <li><a href="#" class="center-y-axis">Pitanja</a></li>
+                </ul>
+            </nav>
+            <div id="login-form-outside">
+                <div id="login-form-inside" class="center-y-axis">
+                    <div id="loginBtn">
+                        Prijava
+                    </div>
+                    <div id="registerBtn">
+                        Registracija
+                    </div>
+                </div>
+            </div>
+            <div id="language-card">
+                <label>
+                    <div id="language-div">
+                        <h5 id="language-h5">SRB</h5>
+                        <div id="dropdown-arrow">
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </label>
+
+                <ul class="slide height-0" id="language-slide">
+                    <li class="language" id="SRB"><a href="#"><img src="pictures/icons/serbia.jpg">SRB</a></li>
+                    <li class="language" id="ENG"><a href="#"><img src="pictures/icons/england.jpg">ENG</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div id="hero">
+            <div class="hiden" id="login-register-cards">
+                <div class="login-card hiden" id="login-card">
+
+
+                    <div class="close" id="closeLogin">X</div>
+                    <h2>Login</h2>
+                    <h3>Unesite Vase podatke</h3>
+                    <form class="login-form">
+                        <input class="control" type="text" placeholder="Username" id="username-login">
+                        <div class="password">
+                            <input class="control" id="password-login" placeholder="Password">
+                            <button class="toggle" type="button" onclick="togglePassword(this)"></button>
+                        </div>
+                        <button class="control">LOGIN</button>
+                    </form>
+                </div>
+                <div class="register-card hiden" id="register-card">
+
+                    <div class="close" id="closeRedister">X</div>
+                    <h2>Register</h2>
+
+                    <h3>Unesite Vase podatke</h3>
+                    <form class="register-form">
+                        <input class="control" type="email" placeholder="Email" id="email-register">
+                        <input class="control" type="text" placeholder="Username" id="username-register">
+                        <div class="password">
+                            <input class="control" id="password-register" placeholder="Password">
+                            <button class="toggle" type="button" onclick="togglePassword(this)"></button>
+                        </div>
+                        <button class="control">REGISTER</button>
+                    </form>
+                </div>
+                
+            </div>
+            <div id="circles-1"></div>
+            <div id="circles-2"></div>
+            <h1>LAZA je aplikacija za autoškole</h1>
+            <div id="hero-try-free">
+                <p>Laza vodi računa o datumima umesto vas, kada treba da se registruje auto, kada ističe 
+                    licenca instruktora<br>Lako i brzo evidentirajte uplate svojih učenika i imajte 
+                    pristup podacima uvek i na svakom mestu!
+                <a href="#">
+                    <div id="hero-try-free-Btn">Probaj besplatno</div>
+                </a>
+            </div>
+            <div id="hero-slider">
+                <div id="slider">
+                    <figure>
+                        <img src="pictures/slider/1.jpg">
+                        <img src="pictures/slider/2.jpg">
+                        <img src="pictures/slider/3.jpg">
+                        <img src="pictures/slider/5.jpg">
+                        <img src="pictures/slider/1.jpg">
+                    </figure>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div id="page-row-2">
+            <div id="circles-3"></div>
+            <div id="circles-4"></div>
+            <h2>Sve na jednom mestu</h2>
+            <h5>Mi brinemo umesto Vas</h5>
+            <div id="page-row-2-cards">
+                <div class="page-row-2-card">
+                    <div class="page-row-2-card-icon">
+                        <div class="pills center-y-axis">
+                            <div class="pill-1"></div>
+                            <div class="pill-2"></div>
+                        </div>
+                        <div class="icon-over-pill">
+                            <i class="fa fa-calendar-minus-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="page-row-2-card-text">
+                        <h6>Podsetnici</h6>
+                        <p> 
+                            Imajte svoj kalendar sa svim podsetnicima za registraciju, ispite i slično
+                        </p>
+                    </div>
+                </div>
+
+                <div class="page-row-2-card">
+                    <div class="page-row-2-card-icon">
+                        <div class="pills center-y-axis">
+                            <div class="pill-1"></div>
+                            <div class="pill-2"></div>
+                        </div>
+                        <div class="icon-over-pill">
+                            <i class="fa fa-tasks" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="page-row-2-card-text">
+                        <h6>Dostupnost</h6>
+                        <p> 
+                            Imajte sve informacije uvek i svuda, na pad klikova putem sajta ili aplikacije
+                        </p>
+                    </div>
+                </div>
+
+                <div class="page-row-2-card">
+                    <div class="page-row-2-card-icon">
+                        <div class="pills center-y-axis">
+                            <div class="pill-1"></div>
+                            <div class="pill-2"></div>
+                        </div>
+                        <div class="icon-over-pill">
+                            <i class="fa fa-bell" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="page-row-2-card-text">
+                        <h6>Obaveštenja</h6>
+                        <p>
+                            Obavestićemo Vas kada treba registrovati vozilo ili pordužiti licencu
+                        </p>
+                    </div>
+                </div>
+
+                <div class="page-row-2-card">
+                    <div class="page-row-2-card-icon">
+                        <div class="pills center-y-axis">
+                            <div class="pill-1"></div>
+                            <div class="pill-2"></div>
+                        </div>
+                        <div class="icon-over-pill">
+                            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="page-row-2-card-text">
+                        <h6>Puzdanost</h6>
+                        <p> 
+                            Papiri se gube, a ljudi zaboravljaju! LAZA je pouzdan način da uvek imate sve informacije 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div id="circles-5"></div>
+            <div id="circles-6"></div>
+            <div id="circles-7"></div>
+            <div id="circles-8"></div>
+            <div id="about-conteiner" class="center-y-axis">
+                <div class="about-card">
+                    <div class="about-card-left about-card-text">
+                        <div class="about-card-text-inside center-y-axis">
+                            <h3 class="">Učenici</h3>
+                            <p>
+                                Imajte sve učenike na jednom mestu. Lako proverite i evidentirajte uplate
+                                i status učenika. Omogućite učenicima samostalan uvid u 
+                                svoje podatke.
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="about-card-right about-card-picture">
+                        <div class="about-card-picture-pills-right center-y-axis">
+                            <div class="about-card-picture-pill-1"></div>
+                            <div class="about-card-picture-pill-2"></div>
+                        </div>
+                        <div class="about-card-picture-inside-div-right center-y-axis">
+                            <img src="">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-left about-card-picture page-row-2-card-for-replace-1">
+                        <div class="about-card-picture-pills-left center-y-axis">
+                            <div class="about-card-picture-pill-1"></div>
+                            <div class="about-card-picture-pill-2"></div>
+                        </div>
+                        <div class="about-card-picture-inside-div-left center-y-axis">
+                            <img src="">
+                        </div>
+                    </div>
+                    <div class="about-card-right about-card-text page-row-2-card-for-replace-2">
+                        <div class="about-card-text-inside center-y-axis">
+                            <h3 class="">Vozila</h3>
+                            <p>
+                                Imajte podsetnik za registraciju kao i digitalnu servisnu knjižicu za sva 
+                                vozila.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-left about-card-text">
+                        <div class="about-card-text-inside center-y-axis">
+                            <h3 class="">Instruktori</h3>
+                            <p>
+                                Podsetićemo Vas kada ističu licence instruktora i kada treba uraditi 
+                                lekarski pregled.
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="about-card-right about-card-picture">
+                        <div class="about-card-picture-pills-right center-y-axis">
+                            <div class="about-card-picture-pill-1"></div>
+                            <div class="about-card-picture-pill-2"></div>
+                        </div>
+                        <div class="about-card-picture-inside-div-right center-y-axis">
+                            <img src="">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-left about-card-picture page-row-2-card-for-replace-1">
+                        <div class="about-card-picture-pills-left center-y-axis">
+                            <div class="about-card-picture-pill-1"></div>
+                            <div class="about-card-picture-pill-2"></div>
+                        </div>
+                        <div class="about-card-picture-inside-div-left center-y-axis">
+                            <img src="">
+                        </div>
+                    </div>
+                    <div class="about-card-right about-card-text page-row-2-card-for-replace-2">
+                        <div class="about-card-text-inside center-y-axis">
+                            <h3 class="">Ispiti</h3>
+                            <p>
+                                Podsećamo Vas i Vaše učenike kada je ispit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="packages">
+            <div id="circles-9"></div>
+            <div id="circles-10"></div>
+            <h2>Prilagodite svojim potrebama</h2>
+            <h5>ne preplacujte i koristite prema svojim potrebama</h5>
+            <div id="packages-recommended">Preporucujemo</div>
+            <div id="pricelist">
+                <div class="pricelist-offer">
+                    <div class="offer-row-1">
+                        <h6>A-klasa</h6>
+                        <p>Starter</p>
+                    </div>
+                    <div class="offer-row-2">
+                        <h4 class="center-y-axis">9.99 <i class="fa fa-eur" aria-hidden="true"></i><p>/ mes</p></h4>
+                    </div>
+                    <div class="offer-row-3">
+                        <ul>
+                            <div> 
+                                <li class="included-in-offer"><i class="fa fa-check" aria-hidden="true"></i><p>Profil škole</p></li>
+                                <li class="included-in-offer"><i class="fa fa-check" aria-hidden="true"></i><p>Neograničen broj vozila</p></li>
+                                <li class="included-in-offer"><i class="fa fa-check" aria-hidden="true"></i><p>Neograničen broj instruktora</p></li>
+                                </div>
+                            <div> 
+                                <li class="not-included-in-offer"><i class="fa fa-times" aria-hidden="true"></i><p>Neograničen broj učenika</p></li>
+                                <li class="not-included-in-offer"><i class="fa fa-times" aria-hidden="true"></i><p>Kalendar</p></li>
+                                <li class="not-included-in-offer"><i class="fa fa-times" aria-hidden="true"></i><p>Mobilna aplikacija</p></li>
+                            </div>
+                            <div>
+                                <li class="not-included-in-offer"><i class="fa fa-times" aria-hidden="true"></i></i><p>Ispiti</p></li>
+                                <li class="not-included-in-offer"><i class="fa fa-times" aria-hidden="true"></i></i><p>Profil učenika</p></li>
+                                <li class="not-included-in-offer"><i class="fa fa-times" aria-hidden="true"></i></i><p>Slanje obaveštenja učenicima</p></li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="offer-row-4">
+                        <div class="choose-btn center-y-axis">Registruj se besplatno</div>
+                    </div>
+                </div>
+                <div class="pricelist-offer">
+                    <div class="offer-row-1">
+                        <h6>S-klasa</h6>
+                        <p>Standard</p>
+                    </div>
+                    <div class="offer-row-2">
+                        <h4 class="center-y-axis">19.99 <i class="fa fa-eur" aria-hidden="true"></i><p>/ mes</p></h4>
+                    </div>
+                    <div class="offer-row-3">
+                        <ul>
+                            <div> 
+                                <li class="included-in-offer"><i class="fa fa-check" aria-hidden="true"></i><p>Profil škole</p></li>
+                                <li class="included-in-offer"><i class="fa fa-check" aria-hidden="true"></i><p>Neograničen broj vozila</p></li>
+                                <li class="included-in-offer"><i class="fa fa-check" aria-hidden="true"></i><p>Neograničen broj instruktora</p></li>
+                                </div>
+                            <div> 
+                                <li class="included-in-offer"><i class="fa fa-check" aria-hidden="true"></i><p>Neograničen broj učenika</p></li>
+                                <li class="included-in-offer"><i class="fa fa-check" aria-hidden="true"></i><p>Kalendar</p></li>
+                                <li class="included-in-offer"><i class="fa fa-check" aria-hidden="true"></i><p>Mobilna aplikacija</p></li>
+                            </div>
+                            <div>
+                                <li class="included-in-offer"><i class="fa fa-check" aria-hidden="true"></i><p>Ispiti</p></li>
+                                <li class="not-included-in-offer"><i class="fa fa-times" aria-hidden="true"></i></i><p>Profil učenika</p></li>
+                                <li class="not-included-in-offer"><i class="fa fa-times" aria-hidden="true"></i><p>Slanje obaveštenja učenicima</p></li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="offer-row-4">
+                        <div class="choose-btn center-y-axis">Registruj se besplatno</div>
+                    </div>
+                </div>
+                <div class="pricelist-offer">
+                    <div class="offer-row-1">
+                        <h6>G-klasa</h6>
+                        <p>Premium</p>
+                    </div>
+                    <div class="offer-row-2">
+                        <h4 class="center-y-axis">29.99 <i class="fa fa-eur" aria-hidden="true"></i><p>/ mes</p></h4>
+                    </div>
+                    <div class="offer-row-3">
+                        <ul>
+                            <div> 
+                                <li class="included-in-offer"><i class="fa fa-check" aria-hidden="true"></i><p>Profil škole</p></li>
+                                <li class="included-in-offer"><i class="fa fa-check" aria-hidden="true"></i><p>Neograničen broj vozila</p></li>
+                                <li class="included-in-offer"><i class="fa fa-check" aria-hidden="true"></i><p>Neograničen broj instruktora</p></li>
+                                </div>
+                            <div> 
+                                <li class="included-in-offer"><i class="fa fa-check" aria-hidden="true"></i><p>Neograničen broj učenika</p></li>
+                                <li class="included-in-offer"><i class="fa fa-check" aria-hidden="true"></i><p>Kalendar</p></li>
+                                <li class="included-in-offer"><i class="fa fa-check" aria-hidden="true"></i><p>Mobilna aplikacija</p></li>
+                            </div>
+                            <div>
+                                <li class="included-in-offer"><i class="fa fa-check" aria-hidden="true"></i><p>Ispiti</p></li>
+                                <li class="included-in-offer"><i class="fa fa-check" aria-hidden="true"></i><p>Profil učenika</p></li>
+                                <li class="included-in-offer"><i class="fa fa-check" aria-hidden="true"></i><p>Slanje obaveštenja učenicima</p></li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="offer-row-4">
+                        <div class="choose-btn center-y-axis">Registruj se besplatno</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page-row-5">
+            <div id="circles-11"></div>
+            <div id="page-row-5-try-free">
+                <h4 class="center-y-axis">50% popusta na 2 godine</h4>
+                <div id="page-row-5-try-free-Btn" class="center-y-axis">Registruj se sada</div>
+            </div>
+        </div>
+        <footer>
+
+        </footer>
+
+        <script src="./js/main.js"></script>
+    </body>
+</html>
